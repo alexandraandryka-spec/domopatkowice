@@ -525,23 +525,6 @@ h2 {
   color: var(--muted);
 }
 
-.document-strip {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.doc-card {
-  min-height: 380px;
-  background: var(--white);
-}
-
-.doc-card img {
-  object-fit: contain;
-  padding: 10px;
-  background: var(--white);
-}
-
 .visualization-layout .section-head {
   max-width: 860px;
 }
