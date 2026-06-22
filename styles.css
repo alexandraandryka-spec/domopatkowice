@@ -452,6 +452,10 @@ h2 {
   align-items: stretch;
 }
 
+.plan-card-copy-only {
+  grid-template-columns: 1fr;
+}
+
 .plan-copy {
   padding: clamp(24px, 4vw, 34px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -469,6 +473,20 @@ h2 {
 .plan-copy p:not(.eyebrow) {
   color: rgba(255, 255, 255, 0.78);
   font-size: 1.04rem;
+}
+
+.plan-list {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.plan-list li + li {
+  margin-top: 10px;
+}
+
+.plan-list strong {
+  color: var(--white);
 }
 
 .pdf-frame {
