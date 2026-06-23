@@ -440,6 +440,23 @@ h2 {
   text-align: right;
 }
 
+.detail-important {
+  grid-column: 1 / -1;
+  border-top-width: 5px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 240, 0.98), rgba(237, 230, 218, 0.95));
+}
+
+.detail-important p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.detail-important .button {
+  width: fit-content;
+}
+
 .plan-grid {
   display: grid;
   gap: 18px;
