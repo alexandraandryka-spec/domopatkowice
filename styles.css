@@ -13,6 +13,7 @@
   --bronze: #8d6331;
   --white: #ffffff;
   --shadow: rgba(7, 26, 51, 0.18);
+  --display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --max: 1180px;
   --radius: 8px;
 }
@@ -192,13 +193,15 @@ p {
 }
 
 h1 {
-  max-width: 930px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.2rem, 8vw, 7rem);
-  line-height: 0.95;
-  font-weight: 700;
+  max-width: 880px;
+  font-family: var(--display);
+  font-size: clamp(2.9rem, 6.8vw, 5.85rem);
+  line-height: 0.92;
+  font-weight: 600;
   text-wrap: balance;
-  letter-spacing: 0;
+  letter-spacing: -0.028em;
+  font-kerning: normal;
+  text-shadow: 0 10px 28px rgba(7, 26, 51, 0.22);
 }
 
 .hero-lead {
@@ -276,11 +279,11 @@ h1 {
 }
 
 h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.25rem, 5vw, 4.25rem);
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-family: var(--display);
+  font-size: clamp(2.15rem, 4.6vw, 3.95rem);
+  line-height: 0.94;
+  font-weight: 600;
+  letter-spacing: -0.022em;
   text-wrap: balance;
   color: var(--ink);
 }
@@ -410,8 +413,11 @@ h2 {
 .geo-summary h3,
 .plan-copy h3 {
   margin-bottom: 10px;
-  font-size: 1.15rem;
-  line-height: 1.2;
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 2.2vw, 1.9rem);
+  line-height: 0.98;
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 .detail ul {
@@ -478,8 +484,7 @@ h2 {
 
 .plan-copy h3 {
   margin-bottom: 14px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.9rem, 3vw, 3rem);
+  font-size: clamp(2rem, 3.1vw, 3.05rem);
   color: var(--white);
 }
 
@@ -797,7 +802,8 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(2.65rem, 16vw, 4.4rem);
+    font-size: clamp(2.35rem, 12.8vw, 3.85rem);
+    line-height: 0.94;
   }
 
   .hero-inner {
